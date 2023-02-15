@@ -110,24 +110,32 @@ transition: .5s;
 	font-size: 20px;
 	padding: 10px;
 }
-.cont
-{
-  display: flexbox;
-}
-.quote {
-	/*width: 1500px;*/
-  
+
+
+
+#info{
+  height: 700px;
   display: flex;
-  background-color: brown;
-  border-radius: 45px;
- 
-
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.quote p {
-	padding-top: 150px;
-	font-size: 55px;
-	color: black; 
-	font-family: 'Playfair Display', serif;
-	text-align: center;
 
+#info p{
+  font-size: 50px;
+  text-align: center;
+  width: 70rem;
+  font-weight: 800;
+}
+
+#info::before{
+  content: '';
+  background: url('https://github.com/manasgokavi/Websitetrial/blob/main/PESMCOE.jpg?raw=true') center center /cover no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
 }
